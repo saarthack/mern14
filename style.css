@@ -1,0 +1,166 @@
+@font-face {
+    font-family: hero;
+    src: url(./NHaasGroteskDSPro-65Md.woff2);
+}
+@font-face {
+    font-family: heroine;
+    src: url(./vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4Y3qwzQ.woff2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+#nav img{
+    height: 28px;
+}
+
+
+#part1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#part1 h2{
+    display: none;
+
+}
+
+#part1 h4{
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+#part2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#part2 button{
+    padding: 13px 18px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#log{
+    background-color: black;
+    color: white;
+}
+
+
+
+#center{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#center h1{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    width: 50%;
+    font-family: heroine;
+    font-weight: 400;
+}
+#center p{
+    font-size: 18px;
+    width: 45%;
+}
+
+#center #search{
+    background-color: #eee;
+    height: 58px;
+    border-radius: 50px;
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#shots{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 15px;
+}
+#shots h2{
+    background-color: rgb(240, 83, 109);
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#search input{
+    height: 100%;
+    width: 80%;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#search:hover{
+    border: 1px solid pink;
+}
+
+
+
+@media (max-width:600px) {
+    #nav{
+        padding: 17px 25px;
+    }
+    #part1{
+        gap: 10px;
+    }
+    #nav img{
+        height: 25px;
+    }
+    #part1 h4{
+        display: none;
+    }
+    #sign{
+        display: none;
+    }
+    #part1 h2{
+        display: block;
+        font-size: 20px;
+    }
+    #part2 button{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    #center h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    #center p{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+
