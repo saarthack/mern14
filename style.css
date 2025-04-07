@@ -8,50 +8,74 @@ html,
 body {
     height: 100%;
     width: 100%;
-    
 }
 body{
-    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #card{
-    width: 270px;
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    background: linear-gradient(lightblue,rgb(110, 186, 188));
+    position: relative;
+    overflow: hidden;
+}   
+
+
+#card>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+#bottom{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 15px;
+    background: linear-gradient(transparent,rgb(110, 186, 188));
+
 }
-h2{
-    font-size: 28px;
-    margin-bottom: 20px;
+#bottom img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btm1{
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}
+
+.btm1 h3{
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
 }
 h5{
     color: red;
 
-    font-size: 23px;
-    margin-bottom: 10px;
 }
-button{
-    background-color: royalblue;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+.btm2 button{
+    padding: 15px 20px;
+    background-color: white;
     border: none;
-    font-size: 18px;
-    font-weight: 600;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 button:active{
     scale: 0.95;
+}
+
+h5{
+    font-size: 20px;
 }
