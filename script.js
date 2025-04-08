@@ -1,14 +1,17 @@
 var btn = document.querySelector('button')
-var h5 = document.querySelector('h5')
+var percent = document.querySelector('#percent')
+var growth = document.querySelector('#growth')
+
+var num = 0
 
 btn.addEventListener('click',function(){
-    
-    h5.innerHTML = 'Sending...'
-    h5.style.color = 'gold'
-    btn.innerHTML = 'Adding...'
+    var int = setInterval(function(){
+        num++
+        percent.innerHTML = num+'%'
+        growth.style.width = num+'%'
+    },40)
+
     setTimeout(function(){
-        h5.innerHTML = 'Friends'
-        h5.style.color = 'green'
-        btn.innerHTML = 'Remove'
-    },3000)
+        clearInterval(int)
+    },4000)
 })
