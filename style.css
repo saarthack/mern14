@@ -2,62 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:monospace;
 }
 html,
 body {
     height: 100%;
     width: 100%;
 }
-body{
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#card{
-    width: 350px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-#progress{
-    height: 15px;
-    width: 100%;
-    background-color: gainsboro;
-    border-radius: 50px;
-}
-
-#second{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 25px;
-    margin: 10px 0;
-}
-#last{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 button{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(15, 240, 15);
-    color: white;
-    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    padding: 13px 20px;
+    left: 50%;
+    z-index: 99;
+
+    transform: translate(-50%,-50%);
 }
 
-button:active{
-    scale: 0.95;
-}
-#growth{
-    height: 100%;
-    width:0%;
-    background-color: rgb(15, 240, 15);
-    border-radius: 50px;
+img{
+    height: 100px;
+    position: absolute;
 }
