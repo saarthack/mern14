@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
 }
 
-#main{
+#main {
     height: 100%;
     width: 100%;
     background-color: gainsboro;
@@ -22,57 +23,63 @@ body {
     overflow: auto;
 }
 
-.card{
+.card {
     width: 350px;
     background-color: white;
     border-radius: 5px;
     text-align: center;
 }
 
-.top{
+.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 25px;
     margin-bottom: 5px;
 }
-.card img{
+
+.card img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 5px;
 }
-.card .name{
+
+.card .name {
     font-size: 25px;
     margin-bottom: 5px;
 }
-.card .role{
+
+.card .role {
     font-size: 14px;
     font-weight: 500;
 }
-.card .com{
+
+.card .com {
     font-size: 14px;
     font-weight: 500;
 
     margin-bottom: 5px;
 }
 
-.skills{
+.skills {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
 }
-.skills h4{
+
+.skills h4 {
     font-size: 12px;
     font-weight: 500;
     border-radius: 50px;
     border: 1px solid black;
     padding: 4px 10px;
 }
-.skills h5{
+
+.skills h5 {
     font-size: 12px;
     font-weight: 500;
     border-radius: 50px;
@@ -81,11 +88,12 @@ body {
     padding: 4px 10px;
 }
 
-.card p{
+.card p {
     font-size: 14px;
     padding: 5px 30px;
 }
-.card>button{
+
+.card > button {
     width: 100%;
     padding: 23px 0;
     border: none;
@@ -94,12 +102,13 @@ body {
     background-color: transparent;
     transition: all ease 0.3s;
 }
-.card>button:hover{
+
+.card > button:hover {
     background-color: rgb(0, 213, 255);
     color: #fff;
 }
 
-.top button{
+.top button {
     background-color: rgb(0, 194, 0);
     color: #fff;
     padding: 5px 10px;
@@ -107,7 +116,43 @@ body {
     border: none;
     font-weight: 600;
 }
-.top h3{
+
+.top h3 {
     font-size: 24px;
     font-weight: 500;
+}
+
+
+.card > button:active {
+    font-size: 13px;
+
+}
+
+#full {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#full h1{
+    font-size: 60px;
+}
+#full img{
+    height: 400px;
+}
+
+#full h4{
+    background-color: red;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;
+    right: 8%;
+    font-size: 30px;
 }

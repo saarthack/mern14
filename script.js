@@ -103,11 +103,10 @@ const users = [
 
 var sum = ''
 
-
 users.forEach(function (elem, idx) {
     sum = sum + `<div class="card">
     <div class="top">
-        ${elem.available?'<button>available</button>':'<h1></h1>'}
+        ${elem.available ? '<button>available</button>' : '<h1></h1>'}
         <h3>$${elem.price}/hr</h3>
     </div>
     <img src="${elem.image}" alt="">
@@ -123,11 +122,27 @@ users.forEach(function (elem, idx) {
         <h5>+${elem.skills.length - 3}</h5>
     </div>
     <p>${elem.description}</p>
-    <button>View Profile</button>
+    <button id='${idx}'>View Profile</button>
 </div>`
 })
 
 
 var main = document.querySelector('#main')
 
-main.innerHTML = sum 
+main.innerHTML = sum
+
+
+var full = document.querySelector('#full')
+var cross = document.querySelector('#cross')
+
+main.addEventListener('click', function (dets) {
+    var gold = users[dets.target.id]
+
+    full.style.display = 'flex'
+    full.childNodes[3].innerHTML = gold.fullName
+    full.childNodes[5].src = gold.image
+})
+
+cross.addEventListener('click', function () {
+    full.style.display = 'none'
+})
